@@ -1,0 +1,4 @@
+output/
+data/raw_pdfs/
+__pycache__/
+*.pyc
