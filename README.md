@@ -19,6 +19,7 @@ PDF-Rechnungen werden automatisch verarbeitet:
 - Excel-Automatisierung (openpyxl) — zwei Blätter, bedingte Formatierung
 - Power BI Dashboard — in Entwicklung
 - AI Agent (n8n) — Klassifizierung mit Human-in-the-Loop
+- GitHub Actions (CI/CD) — automatischer Zeitplan, Artefakt-Export
 
 ## Projektstruktur
 
@@ -34,3 +35,11 @@ Workflow klassifiziert Rechnungen automatisch:
 
 ![n8n Workflow](docs/n8n_workflow.png)
 
+## Status
+- ✅ Schritt 1: PDF-Extraktion (pdfplumber + LLM)
+- ✅ Schritt 2: Datenbereinigung + SQLite-Datenbank
+- ✅ Schritt 3: Excel-Report (zwei Blätter, bedingte Formatierung)
+- ✅ Schritt 4: AI Agent (n8n) — Klassifizierung mit Human-in-the-Loop
+- ✅ Schritt 5: GitHub Actions — automatischer Zeitplan, Excel-Report als Artefakt
+- ⬜ Schritt 6: Power BI Dashboard (geplant — Windows erforderlich)
+- ⬜ Schritt 7: Power Automate (geplant — Windows erforderlich)
