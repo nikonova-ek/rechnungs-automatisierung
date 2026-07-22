@@ -1,0 +1,131 @@
+[
+  {
+    "file": "invoice_01.pdf",
+    "data": {
+      "rechnungsnr": "RE-2026-1001",
+      "datum": "15.07.2026",
+      "lieferant": "Bauer Bürobedarf GmbH",
+      "netto": 100.0,
+      "mwst": 19.0,
+      "brutto": 119.0
+    }
+  },
+  {
+    "file": "invoice_02.pdf",
+    "data": null,
+    "error": "parsing failed"
+  },
+  {
+    "file": "invoice_03.pdf",
+    "data": null,
+    "error": "parsing failed"
+  },
+  {
+    "file": "invoice_04.pdf",
+    "data": null,
+    "error": "parsing failed"
+  },
+  {
+    "file": "invoice_05.pdf",
+    "data": {
+      "rechnungsnr": "RE-2026-1005",
+      "datum": "23.4.26",
+      "lieferant": "Schmidt & Partner Consulting GmbH",
+      "netto": 2100.0,
+      "mwst": 399.0,
+      "brutto": 2499.0
+    }
+  },
+  {
+    "file": "invoice_06.pdf",
+    "data": {
+      "rechnungsnr": "INV-2026-1006",
+      "datum": "13.1.26",
+      "lieferant": "Bauer Bürobedarf GmbH",
+      "netto": 75.8,
+      "mwst": 14.4,
+      "brutto": 90.2
+    }
+  },
+  {
+    "file": "invoice_07.pdf",
+    "data": null,
+    "error": "parsing failed"
+  },
+  {
+    "file": "invoice_08.pdf",
+    "data": {
+      "rechnungsnr": "R-2026-1008",
+      "datum": "20.07.2026",
+      "lieferant": "IT-Service Krüger e.K.",
+      "netto": "1200,00",
+      "mwst": "228,00",
+      "brutto": "1428,00"
+    }
+  },
+  {
+    "file": "invoice_09.pdf",
+    "data": null,
+    "error": "parsing failed"
+  },
+  {
+    "file": "invoice_10.pdf",
+    "data": {
+      "rechnungsnr": "INV-2026-1010",
+      "datum": "15.6.26",
+      "lieferant": "Schmidt & Partner Consulting GmbH",
+      "netto": 980.0,
+      "mwst": 186.2,
+      "brutto": 1166.2
+    }
+  },
+  {
+    "file": "invoice_11.pdf",
+    "data": {
+      "rechnungsnr": "RE-2026-1011",
+      "datum": "9. Juni 2026",
+      "lieferant": "Bauer Bürobedarf GmbH",
+      "netto": 255.0,
+      "mwst": 48.45,
+      "brutto": 303.45
+    }
+  },
+  {
+    "file": "invoice_12.pdf",
+    "data": {
+      "rechnungsnr": "R-2026-1012",
+      "datum": "24. Februar 2026",
+      "lieferant": "Nordwind Logistik GmbH & Co. KG",
+      "netto": 670.0,
+      "mwst": 127.3,
+      "brutto": 797.3
+    }
+  },
+  {
+    "file": "invoice_13.pdf",
+    "data": {
+      "rechnungsnr": "INV-2026-1013",
+      "datum": "08.06.2026",
+      "lieferant": "IT-Service Krüger e.K.",
+      "netto": 1875.0,
+      "mwst": 356.25,
+      "brutto": 2231.25
+    }
+  },
+  {
+    "file": "invoice_14.pdf",
+    "data": null,
+    "error": "parsing failed"
+  },
+  {
+    "file": "invoice_15.pdf",
+    "data": {
+      "rechnungsnr": "R-2026-1015",
+      "datum": "21. April 2026",
+      "lieferant": "Schmidt & Partner Consulting GmbH",
+      "netto": 3200.0,
+      "mwst": 608.0,
+      "brutto": 3808.0
+    }
+  }
+]
