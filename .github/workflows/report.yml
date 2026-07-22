@@ -1,0 +1,28 @@
+name: Rechnungs-Report
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # jeden Tag um 6 Uhr morgens
+  workflow_dispatch:       # auch manuell startbar
+
+jobs:
+  run-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v3
+
+      - name: Python einrichten
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: pip install pdfplumber pandas openpyxl
+
+      - name: Clean and Load ausführen
+        run: python src/clean_and_load.py
+
+      - name: Excel-Report erstellen
+        run: python src/excel_report.py
