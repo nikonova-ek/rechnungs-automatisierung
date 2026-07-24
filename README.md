@@ -1,4 +1,5 @@
 # Automatisierte Rechnungsverarbeitung
+Automatisierter Pipeline zur Verarbeitung von PDF-Rechnungen mittels LLM-Extraktion, SQL-Datenbank, Excel-Report und AI-Klassifizierung.
 
 ## Problem
 Manuelle Erfassung von Rechnungsdaten kostet ca. 15 Min. pro Rechnung.
@@ -20,8 +21,7 @@ PDF-Rechnungen werden automatisch verarbeitet:
 - Power BI Dashboard — in Entwicklung
 - AI Agent (n8n) — Klassifizierung mit Human-in-the-Loop
 - GitHub Actions (CI/CD) — automatischer Zeitplan, Artefakt-Export
-
-## Projektstruktur
+- Genauigkeitsmessung (eval.py) — 94,4% Extraktionsgenauigkeit
 
 ## Excel-Report
 Zwei Blätter:
@@ -35,11 +35,16 @@ Workflow klassifiziert Rechnungen automatisch:
 
 ![n8n Workflow](docs/n8n_workflow.png)
 
+## Warum LLM statt Regex?
+
+Regex (reguläre Ausdrücke) funktioniert nur bei einheitlichen Formaten.
+Rechnungen kommen von verschiedenen Lieferanten — jeder schreibt anders.
+Beispiel Datum: 15.07.2026 vs 15. Juli 2026 vs 15.7.26 — LLM erkennt alle drei, Regex bräuchte drei separate Regeln.
 
 ## Ergebnisse
-- 9 von 15 Rechnungen erfolgreich verarbeitet (LLM-Parsing)
-- Extraktionsgenauigkeit: 94,4% (34 von 36 Feldern korrekt)
-- Manuelle Erfassung auf unter 1 Min. pro Rechnung reduziert
+- **94,4% Extraktionsgenauigkeit** (34 von 36 Feldern korrekt)
+- 9 von 15 Rechnungen erfolgreich verarbeitet
+- Verarbeitungszeit: unter 1 Min. pro Rechnung (vorher: ~15 Min.)
 
 ## Status
 - ✅ Schritt 1: PDF-Extraktion (pdfplumber + LLM)
