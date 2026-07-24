@@ -35,6 +35,12 @@ Workflow klassifiziert Rechnungen automatisch:
 
 ![n8n Workflow](docs/n8n_workflow.png)
 
+
+## Ergebnisse
+- 9 von 15 Rechnungen erfolgreich verarbeitet (LLM-Parsing)
+- Extraktionsgenauigkeit: 94,4% (34 von 36 Feldern korrekt)
+- Manuelle Erfassung auf unter 1 Min. pro Rechnung reduziert
+
 ## Status
 - ✅ Schritt 1: PDF-Extraktion (pdfplumber + LLM)
 - ✅ Schritt 2: Datenbereinigung + SQLite-Datenbank
